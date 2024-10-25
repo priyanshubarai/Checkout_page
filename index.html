@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="background">
+        <img src="./dccl--html-css-device-eshop-checkout/background-image@2x.png" alt="">
+        
+         <div class="checkout_box">
+            <header>
+                <span id="heading">Checkout</span>
+                <span id="item_count">3 ITEMS</span>
+            </header>
+            <main>
+                <div class="summary">
+                    <div class="table">
+                        <div class="item_row">
+                            <div class="item_img"><img src="./dccl--html-css-device-eshop-checkout/Gold.png" alt=""></div>
+                            <div class="item_details">
+                                <span class="item_name">iPhone 12 Pro</span>
+                                <span class="item_color">Golden</span>
+                                <span class="item_qty">x 1</span>
+                            </div>
+                            <div class="item_price">$999.00</div>
+                            <div class="cross_btn"><img src="./dccl--html-css-device-eshop-checkout/close-icon.svg" alt=""></div>
+                        </div>
+                        <div class="item_row">
+                            <div class="item_img"><img src="./dccl--html-css-device-eshop-checkout/Blue.png" alt=""></div>
+                            <div class="item_details">
+                                <span class="item_name">Apple Watch</span>
+                                <span class="item_color">Blue</span>
+                                <span class="item_qty">x 1</span>
+                            </div>
+                            <div class="item_price">$399.00</div>
+                            <div class="cross_btn"><img src="./dccl--html-css-device-eshop-checkout/close-icon.svg" alt=""></div>
+                        </div>
+                        <div class="item_row">
+                            <div class="item_img"><img src="./dccl--html-css-device-eshop-checkout/iMac=Front 1.png" alt=""></div>
+                            <div class="item_details">
+                                <span class="item_name">iMac</span>
+                                <span class="item_color">Green</span>
+                                <span class="item_qty">x 1</span>
+                            </div>
+                            <div class="item_price">$1199.00</div>
+                            <div class="cross_btn"><img src="./dccl--html-css-device-eshop-checkout/close-icon.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="coupon">
+                        <input type="text" placeholder="Enter coupon code" name="coupon_code" id="coupon_code">
+                        <button type="submit">Apply Coupon</button>
+                    </div>
+                    <div class="billing">
+                        <div class="billing_row Sub_total">
+                            <div>Sub total</div>
+                            <div>$2597.00</div>
+                        </div>
+                        <div class="billing_row Tax">
+                            <div>Tax</div>
+                            <div>$623.28</div>
+                        </div>
+                        <div class="billing_row Total">
+                            <div>Total</div>
+                            <div>$3220.28</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <header>Contact Information</header>
+                    <form method="POST" action="submit">
+                        <div class="name">
+                            <label for="name">First & last name</label><br/>
+                            <input type="text" id="name" name="name" placeholder="Enter first & last name"><br/>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email Address </label><br/>
+                            <input type="text" id="email" name="email" placeholder="Enter email address"><br/>
+                        </div>
+                        <div class="country_code">
+                            <div class="country">
+                                <label for="country">Country</label><br/>
+                                <select name="country" id="country">
+                                    <option value="1">Finland</option>
+                                    <option value="2">Melbourne</option>
+                                    <option value="3">Cromwell</option>
+                                </select>
+                            </div>
+                            <div class="postal_code">
+                                <label for="code">Postal Code</label><br/>
+                                <input type="text" name="code" id="code" maxlength="5" placeholder="00270">
+                            </div>
+                        </div>
+                        <button type="submit">Continue</button>
+                    </form>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
