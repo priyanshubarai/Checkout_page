@@ -145,6 +145,7 @@
     top: 10vh;
     left: -1vw;
     color: #6C727F;
+    height: 8vh;
 }
     
 .coupon{
@@ -161,14 +162,13 @@
 .coupon>input{
     border-radius: 5px;
     border: 2px solid #00000033;
+    padding: 0% 2%;
+    font-size: 1rem;
 }
 
 *::placeholder{
     font-size: 1rem;
-    position: relative;
-    left: 1vw;
 }
-
 .coupon>button{
     margin-left: 10px;
     width: 25%;
@@ -227,6 +227,9 @@
     height: 8vh;
     border: 1px solid #00000033;
     background-color: #F3F4F6;
+    padding: 0% 2%;
+    font-size: 1rem;
+
 }
 
 .name , .email , .country , .postal_code{
@@ -237,6 +240,7 @@
 #name , #email{  
     width: 100%;
     border-radius: 5px;
+
 }
 #country, #code{
     border-radius: 5px;
@@ -264,4 +268,8 @@ select{
     font-weight: 600;
     padding: 1vw;
     font-size: 1rem;
+}
+button:hover{
+    transform: translateY(-0.25em);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

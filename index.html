@@ -50,39 +50,39 @@
                         </div>
                     </div>
                     <div class="coupon">
-                        <input type="text" placeholder="Enter coupon code" name="coupon_code" id="coupon_code">
-                        <button type="submit">Apply Coupon</button>
+                        <input type="text" placeholder="Enter coupon code" name="coupon_code" id="coupon_code" maxlength="6">
+                        <button type="submit raise">Apply Coupon</button>
                     </div>
                     <div class="billing">
                         <div class="billing_row Sub_total">
                             <div>Sub total</div>
-                            <div>$2597.00</div>
+                            <div>--</div>
                         </div>
                         <div class="billing_row Tax">
                             <div>Tax</div>
-                            <div>$623.28</div>
+                            <div>--</div>
                         </div>
                         <div class="billing_row Total">
                             <div>Total</div>
-                            <div>$3220.28</div>
+                            <div>--</div>
                         </div>
                     </div>
                 </div>
                 <div class="details">
                     <header>Contact Information</header>
-                    <form method="POST" action="submit">
+                    <form method="get" action="submit">
                         <div class="name">
                             <label for="name">First & last name</label><br/>
-                            <input type="text" id="name" name="name" placeholder="Enter first & last name"><br/>
+                            <input required type="text" id="name" name="name" placeholder="Enter first & last name"><br/>
                         </div>
                         <div class="email">
                             <label for="email">Email Address </label><br/>
-                            <input type="text" id="email" name="email" placeholder="Enter email address"><br/>
+                            <input required type="text" id="email" name="email" placeholder="Enter email address"><br/>
                         </div>
                         <div class="country_code">
                             <div class="country">
                                 <label for="country">Country</label><br/>
-                                <select name="country" id="country">
+                                <select required name="country" id="country">
                                     <option value="1">Finland</option>
                                     <option value="2">Melbourne</option>
                                     <option value="3">Cromwell</option>
@@ -90,7 +90,7 @@
                             </div>
                             <div class="postal_code">
                                 <label for="code">Postal Code</label><br/>
-                                <input type="text" name="code" id="code" maxlength="5" placeholder="00270">
+                                <input required type="text" name="code" id="code" maxlength="5" placeholder="00270">
                             </div>
                         </div>
                         <button type="submit">Continue</button>
